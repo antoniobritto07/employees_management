@@ -1,6 +1,6 @@
 # Employee Management
 
-This project is a simulation system designed to efficiently manage employees. It allows users to perform tasks required in the assessment test, such as department switching, employee activation and deactivation, and viewing departmental modification history, among others.
+This project is a simulation system designed to efficiently manage employees. It allows users to perform tasks, such as department switching, employee activation and deactivation, and viewing departmental modification history, among others.
 
 There are 3 mainly components for the task. The backend, which includes endpoints for managing different entities. The connection to the database and its structure. The frontend for a user-friendly interface.
 
