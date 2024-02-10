@@ -1,0 +1,21 @@
+$primary-color: #FF4500;
+
+.navbar-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 24px;
+    padding: 4px
+}
+
+.navbar-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: $primary-color;
+}
+
+.button-list-employees {
+    padding: 2px;
+    text-decoration: none;
+}
+

@@ -1,0 +1,56 @@
+$title-color: #666666;
+$green-success: #00FF00;
+
+.common-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.employees-table {
+    margin-top: 50px;
+    @extend .common-style;
+    flex-direction: column;
+}
+
+.employees-content-table {
+    width: 700px;
+    @extend .common-style;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    border: 1px solid #d5d5d5;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.employee-name {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.avatar-user {
+    display: flex;
+    justify-content: flex-start;
+    width: 80px;
+    height: 80px;
+    border-radius: 2px;
+    background-color: #00FFFF;
+    margin-right: 5px;
+}
+
+.button-more-info {
+    @extend .common-style;
+    color: #ffffff;
+    background-color: $green-success;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.hire-date-label, .hire-date-info {
+    display: flex;
+    justify-content: flex-start;
+}
+

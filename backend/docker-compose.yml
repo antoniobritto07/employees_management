@@ -1,0 +1,26 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: process.env.TYPEORM_PASSWORD
+      POSTGRES_USER: process.env.TYPEORM_USERNAME
+      POSTGRES_DB: process.env.TYPEORM_DATABASE
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  app:
+    build: .
+    image: project_app
+    depends_on:
+      - db
+    environment:
+      POSTGRES_PASSWORD: process.env.TYPEORM_PASSWORD
+      POSTGRES_USER: process.env.TYPEORM_USERNAME
+      POSTGRES_DB: process.env.TYPEORM_DATABASE
+    command: npm run start
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/app
